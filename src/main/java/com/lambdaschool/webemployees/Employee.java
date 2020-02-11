@@ -26,6 +26,19 @@ public class Employee {
         this.healthPlanID = healthPlanID;
     }
 
+    //Created a copy of the Employee object
+    public Employee(Employee toClone) {
+        this.id = toClone.id;
+        this.fname = toClone.fname;
+        this.lname = toClone.lname;
+        this.salary = toClone.salary;
+        this.has401k = toClone.has401k;
+        this.companyID = toClone.companyID;
+        this.healthPlanID = toClone.healthPlanID;
+    }
+
+
+
     //Getter and Setter
 
     public long getId() {
